@@ -18,4 +18,9 @@ class HomeWorkTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(21,$amit->WeekDays("01-08-2015","31-08-2015"));
     }
 
+    public function testTotalWeeks(){
+        $amit = new HomeWork();
+        $this->assertEquals(4,$amit->TotalWeeks("01-08-2015","31-08-2015"));
+    }
+
 }

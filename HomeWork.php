@@ -38,5 +38,10 @@ class HomeWork
             return $working_days;
         }
     }
+
+    public function TotalWeeks($startDate,$endDate){
+        return floor(($this->DateDiff($startDate,$endDate))/7);
+    }
 }
+
 ?>

@@ -9,13 +9,13 @@ require("HomeWork.php");
 class HomeWorkTest extends PHPUnit_Framework_TestCase {
     public function testDateDiff(){
         $amit = new HomeWork();
-        $this->assertEquals(50,$amit->DateDiff("2013-04-01","2013-04-30"));
+        $this->assertEquals(29,$amit->DateDiff("2013-04-01","2013-04-30"));
 
     }
-    
+
     public function testWeekDays(){
         $amit = new HomeWork();
-        $this->assertTrue(True,$amit->WeekDays("11-07-2015","30-08-2015"));
+        $this->assertEquals(21,$amit->WeekDays("01-08-2015","31-08-2015"));
     }
 
 }
